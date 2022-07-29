@@ -1,0 +1,599 @@
+html, 
+body { 
+    padding: 0;
+    margin: 0;
+/*reset de CSS*/
+}
+
+* {
+    box-sizing: border-box;
+/*contempla el padding dentro del width de todos los elementos*/
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #323234;
+    color: whitesmoke;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px auto;
+}
+
+
+
+.header {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #2f4ccc;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    /*Flex*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__logo {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo img {
+    width: 100%;
+    margin: auto;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    /* visibility: hidden; */
+}
+
+nav {
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__menu li {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__menu li a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.header__menu li a:hover {
+    color: orange;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+/*Slider*/
+.slider h2 {
+    display: none;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: center;
+}
+
+.slider__menu {
+    width: 100%;
+}
+
+.slider__menu li {
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
+/*Clases*/
+.clases {
+    background-color: #2f4ccc;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.clases p {
+    text-align: center;
+}
+
+.clases__grid {
+    width: 100%;
+    margin: auto;
+    padding: 4%;
+    display: grid;
+    grid-row-gap: 40px;
+    grid-column-gap: 4%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 300px);
+    grid-template-areas:
+        "indoor"
+        "funcional"
+        "abd"
+        "fight_do"
+        "axe"
+        "hiit"
+        "gap"
+        "power_bars"
+        "zumba"
+        "musculacion"
+        "power_local"
+        "x55";
+}
+
+
+.clases__grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    
+}
+
+.clases__grid a {
+    color: whitesmoke;
+    font-size: x-large;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.clases__grid a:hover {
+    opacity: 0.6;
+}
+
+.clases__indoor {
+    grid-area: indoor;
+}
+.clases__indoor a {
+    background-image: url("../assets/clases/01-indoor.jpg");
+    background-size: 100% auto;
+}
+
+.clases__funcional {
+    grid-area: funcional;
+}
+.clases__funcional a {
+    background-image: url("../assets/clases/02-funcional.jpg");
+    background-size: 100% auto;
+}
+
+.clases__abd {
+    grid-area: abd;
+}
+.clases__abd a {
+    background-image: url("../assets/clases/03-abd.jpg");
+    background-size: 100% auto;
+}
+
+.clases__fight_do {
+    grid-area: fight_do;
+}
+.clases__fight_do a {
+    background-image: url("../assets/clases/04-fightdo.jpg");
+    background-size: 100% auto;
+}
+
+.clases__axe {
+    grid-area: axe;
+}
+.clases__axe a {
+    background-image: url("../assets/clases/05-axe.jpg");
+    background-size: 100% auto;
+}
+
+.clases__hiit {
+    grid-area: hiit;
+}
+.clases__hiit a {
+    background-image: url("../assets/clases/06-hiit.jpg");
+    background-size: 100% auto;
+}
+
+.clases__gap {
+    grid-area: gap;
+}
+.clases__gap a {
+    background-image: url("../assets/clases/07-gap.jpg");
+    background-size: 100% auto;
+}
+
+.clases__power_bars {
+    grid-area: power_bars;
+}
+.clases__power_bars a {
+    background-image: url("../assets/clases/08-powerbars.jpg");
+    background-size: 100% auto;
+}
+
+.clases__zumba {
+    grid-area: zumba;
+}
+.clases__zumba a {
+    background-image: url("../assets/clases/09-zumba.jpg");
+    background-size: 100% auto;
+}
+
+.clases__musculacion {
+    grid-area: musculacion;
+}
+.clases__musculacion a {
+    background-image: url("../assets/clases/10-musculacion.jpg");
+    background-size: 100% auto;
+}
+
+.clases__power_local {
+    grid-area: power_local;
+}
+.clases__power_local a {
+    background-image: url("../assets/clases/11-powerlocal.jpg");
+    background-size: 100% auto;
+}
+
+.clases__x55 {
+    grid-area: x55;
+}
+.clases__x55 a {
+    background-image: url("../assets/clases/12-x55.jpg");
+    background-size: 100% auto;
+}
+
+/*Video*/
+.video {
+    background-color: #323234;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.video__container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.video__container iframe {
+    width: 100% !important;
+    margin: auto;
+}
+
+
+/*Horarios*/
+.horarios {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: space-around;
+    
+}
+
+.horarios p {
+    text-align: center;
+    text-transform: none;
+}
+
+.horarios div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+.horarios .tabla {
+    background-color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1% 0;
+    font-size: small;
+}
+
+.tabla tr td{
+    border-top: 1px;
+    border-color: orange;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+
+/*Contacto*/
+.contacto {
+    background-color: #2f4ccc;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.contacto__items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contacto__items span {
+    font-weight: 800;
+    font-size: x-large;
+}
+
+.map {
+    display: flex;
+    padding: 4%;
+}
+
+.form {
+    display: flex;
+    padding-left: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div {
+    /* border: 1 solid red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    align-content: space-around;
+    padding-top: 3px;
+    font-size: larger;
+
+}
+
+
+.redes {
+    background-color: #323234;
+}
+
+.footer {
+    background-color: #323234;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 12px;
+    
+}
+
+.footer__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.footer__items div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    border-right: 1px solid whitesmoke;
+    flex:1;
+    text-align: center;
+}
+
+.footer__logo {
+    width: 100%;
+}
+
+.footer__logo img {
+    width: 35%;
+    margin: auto;
+}
+
+.footer__items ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__items a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer__items div ul li img {
+    width: 50%;
+}
+
+.footer small {
+    display: flex;
+    margin: 1% 1%;
+    
+}
+
+/*Sección Portal Socios*/
+.portal {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    padding-top: 10%;
+}
+
+.portal h2 {
+    text-decoration: underline;
+    
+}
+
+.portal__contenido {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+.portal__items {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex:1;
+}
+
+.ingreso {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    padding-top: 2%;
+}
+
+.ingreso__items ul li {
+    display: flex;
+    font-style: italic;
+    font-size: larger;
+    padding-left: 2%;
+    justify-content: flex-start;
+}
+
+.ingreso__items h3 {
+    padding-left: 2%;
+    font-size: larger;
+
+}
+
+.ingreso__form form {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    padding-top: 3px;
+    padding-left: 2%;
+    font-size: larger;
+}
+
+.portal__runner {
+    display: flex;
+    justify-content: center;
+}
+
+.portal__runner img {
+    display: flex;
+    justify-content: center;   
+}
+
+/*Thank You Page*/
+.thank_you {
+    padding-left: 2%;
+}
+
+
+/*Media Queries*/
+@media (min-width: 768px) {
+    .header {
+        font-weight: bold;
+        font-style: normal;
+        font-size: 20px;
+        background-color: #2f4ccc;
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        /*Flex*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .clases__grid {
+        width: 100%;
+        margin: auto;
+        padding: 4%;
+        display: grid;
+        grid-row-gap: 40px;
+        grid-column-gap: 4%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas:"indoor funcional abd"
+                            "fight_do axe hiit"
+                            "gap power_bars zumba"
+                            "musculacion power_local x55"
+    }
+
+    .video__container iframe {
+        width: 560px !important;
+        margin: auto;
+    }
+
+    .horarios .tabla {
+        background-color: black;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1% 0;
+        font-size: medium;
+    }
+
+    .contacto__items {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: larger;
+        padding-top: 20px;
+        
+    }
+
+}
+

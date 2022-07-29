@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeraClub Portal</title>
+    <!--Link a Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--Link de CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Fila de Logo + Menu-->
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/logo.png" alt="TeraClub" title="TeraClub" width="100px" height="100px"/>
+        </div>
+        <h1>TeraClub</h1>
+        <nav>    
+            <ul class="header__menu">
+                <li><a href="index.html">Volver a la Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin fila Logo + Menu-->
+    <main>
+        
+        <section class="portal">
+            <h2>Bienvenido al portal de socios</h2>
+            <div class="portal__contenido">
+                <div class="portal__items">
+                    <div class="ingreso">
+                        <div class="ingreso__items">
+                            <h3>Desde aquí podras acceder a:</h3>
+                            <ul>
+                                <li>- Rutina de entrenamiento personalizada.</li>
+                                <li>- Plan nutricional a medida.</li>
+                                <li>- Seguimiento de objetivos y metas.</li>
+                                <li>- Eventos, novedades y más...</li>
+                            </ul>
+                        </div>   
+                    </div>
+                    <div class="ingreso__form">
+                        <form action="thank_you.html">    
+                            <h3>Ingresa tus datos para acceder</h3>
+                            <div>
+                                <label>
+                                    E-mail
+                                    <input type="email" placeholder="Tu Correo"/>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    Contraseña
+                                    <input type="password" placeholder="Tu Contraseña"/>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="submit"/> 
+                            </div>             
+                        </form>
+                    </div>
+                </div>
+                <div class="portal__runner">
+                    <img src="assets/runner.png" alt="runner" title="Runner"/>
+                </div>        
+            </div>
+        </section>    
+    </main>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeraClub Fitness</title>
+    <!--Link a Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--Link de CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Fila de Logo + Menu-->
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/logo.png" alt="TeraClub" title="TeraClub"/>
+        </div>
+        <h1>TeraClub</h1>
+        <nav>    
+            <ul class="header__menu">
+                <li><a href="index.html">Inicio</a></li>         
+                <li><a href="#clases">Clases</a></li>         
+                <li><a href="#horarios">Horarios</a></li>                             
+                <li><a href="#contacto">Contacto</a></li>         
+                <li><a href="ingresar.html" target="_blank">Ingresar</a></li>         
+            </ul>
+        </nav>
+    </header>
+    <!--Fin fila Logo + Menu-->
+    <main>
+        <section class="slider">
+            <h2>Slider</h2>
+            <!--Imágenes del slider-->
+            <ul class="slider__menu">
+                <li><img src="assets/slider/slider1.jpg" width="100%" alt="grupo_aerobico"/></li>
+                <li><img src="assets/slider/slider2.jpg" width="100%" alt="abdominales"/></li>
+                <li><img src="assets/slider/slider3.jpg" width="100%" alt="levantamiento"/></li>
+                <li><img src="assets/slider/slider4.jpg" width="100%" alt="plancha"/></li>
+            </ul>    
+        </section>
+        
+        <section id="clases" class="clases">
+            <h2>Clases</h2>
+            <p>Elegí la clase que mejor se adapte a tu estilo. Tenemos muchas opciones para vos. ¡No te quedes afuera!</p>
+            <div class="clases__grid">
+                <div class="clases__indoor"><a href="#"><span>Indoor</span></a></div>
+                <div class="clases__funcional"><a href="#"><span>Funcional</span></a></div>
+                <div class="clases__abd"><a href="#"><span>ABD</span></a></div>
+                <div class="clases__fight_do"><a href="#"><span>Fight Do</span></a></div>
+                <div class="clases__axe"><a href="#"><span>Axé</span></a></div>
+                <div class="clases__hiit"><a href="#"><span>HIIT</span></a></div>
+                <div class="clases__gap"><a href="#"><span>GAP</span></a></div>
+                <div class="clases__power_bars"><a href="#"><span>Power Bars</span></a></div>
+                <div class="clases__zumba"><a href="#"><span>Zumba</span></a></div>
+                <div class="clases__musculacion"><a href="#"><span>Musculación</span></a></div>
+                <div class="clases__power_local"><a href="#"><span>Power Local</span></a></div>
+                <div class="clases__x55"><a href="#"><span>X55</span></a></div>
+            </div>            
+        </section>
+        
+        <section class="video">
+            <!--Video institucional/motivacional-->
+            <div class="video__container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l9STK-VptKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section id="horarios" class="horarios">
+            <h2>Horarios</h2>
+            <p>Nuestro salón de musculación se encuentra abierto de lunes a viernes de 8 a 23 hs. y los días sábados de 10 a 18 hs.</p>
+            <div>
+                <!--Tabla de horarios-->
+                <table class="tabla" cellpadding="3" cellspacing="3">
+                    <tr>
+                        <th></th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>GAP</td>
+                        <td>Funcional</td>
+                        <td>Zumba</td>
+                        <td>Funcional</td>
+                        <td>Power Local</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <td>11:30</td>
+                        <td></td>
+                        <td></td>
+                        <td>Stretching</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Stretching</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                        <td>Funcional</td>
+                        <td></td>
+                        <td>Funcional</td>
+                        <td></td>
+                        <td>Funcional</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>ABD / HIIT</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>Fight Do</td>
+                        <td>Power Local</td>
+                        <td>Fight Do</td>
+                        <td>GAP</td>
+                        <td>Fight Do</td>
+                        <td>Zumba</td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td>ABD / HIIT</td>
+                        <td>GAP</td>
+                        <td>ABD / HIIT</td>
+                        <td>ABD / Zumba</td>
+                        <td>ABD / HIIT</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>19:00</td>
+                        <td>Power Local</td>
+                        <td>Funcional</td>
+                        <td>X55</td>
+                        <td>Cardio</td>
+                        <td>Funcional</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>19:30</td>
+                        <td></td>
+                        <td>Indoor</td>
+                        <td></td>
+                        <td>Indoor</td>
+                        <td>Fight Do</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>Funcional</td>
+                        <td>Axe</td>
+                        <td>Funcional</td>
+                        <td>Axe</td>
+                        <td></td>
+                        <td></td>
+                    </tr>            
+                </table>
+            </div>
+        </section>
+        
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto__items">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.288862993387!2d-58.51729145700539!3d-34.64068023205634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc84eb3ba8753%3A0xf9afe94f8456e8a3!2sAv.%20Larraz%C3%A1bal%20100%2C%20C1408HEN%20CABA!5e0!3m2!1ses!2sar!4v1657219678007!5m2!1ses!2sar" width="490" height="490" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="form">
+                    <form action="thank_you.html" target="_blank">
+                        <span>Dejanos tu mensaje y te contactaremos a la brevedad.</span>
+                        <div>
+                            <label>
+                                Nombre:
+                                <input type="text" placeholder="Nombre y Apellido" name="nombre"/>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                E-mail:
+                                <input type="email" placeholder="Correo" name="email"/>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Asunto:
+                                <input type="text" placeholder="Asunto" name="asunto"/>
+                            </label>
+                        </div>
+                        <div>
+                            <textarea placeholder="Mensaje"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar Mensaje"/> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <h2>Nuestras Redes</h2>
+        <section class="redes">
+            <div>
+                <img src="assets/redes.png" width="100%" alt="Redes" title="Banner Redes"/>
+            </div>
+        </section>
+    </main>
+    <!--Inicio de footer-->
+    <footer class="footer">
+        <div class="footer__items">
+            <div class="footer__logo">
+                <img src="assets/logo.png" alt="TeraClub" title="TeraClub"/>
+            </div>
+            <div>
+                <h3>Teléfonos</h3>
+                <a href="tel:1140005000">+54 11 40005000</a>
+                <a href="tel:1140006000">+54 11 40006000</a>
+            </div>    
+            <div>
+                <h3>Dirección</h3>
+                <p>Av. Larrazabal 100, CABA
+                </p>
+            </div>    
+            <div>
+                <h3>Seguínos</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank"><img src="assets/redes/facebook.png" alt="Facebook" title="Facebook"/></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><img src="assets/redes/instagram.png" alt="Instagram" title="Instagram"/></a></li>
+                    <li><a href="https://youtube.com" target="_blank"><img src="assets/redes/youtube.png" alt="YouTube" title="Youtube"/></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>HACETE SOCIO</h3>
+            </div>
+        </div>
+        <small> Copyright 2022 - Martin Suarez</small>
+    </footer>
+    
+</body>
+</html>
