@@ -30,7 +30,7 @@ h2 {
 }
 
 
-
+/*Header*/
 .header {
     font-weight: bold;
     font-style: normal;
@@ -45,6 +45,7 @@ h2 {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 .header__logo {
@@ -62,6 +63,9 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     display: flex;
+    font-size: xx-large;
+    padding: 0 5px;
+    margin: 0 1px;
     /* visibility: hidden; */
 }
 
@@ -72,9 +76,24 @@ nav {
 
 }
 
-.header__menu {
+.menu_btn {
     display: flex;
-    flex-direction: column;
+    color: whitesmoke;
+    font-size: medium;
+    font-family: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+    background-color: transparent;
+    background-image: url(/assets/icons/menu.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 10px 20px;
+    padding-left: 30px;
+}
+
+.header__menu {
+    display: none;
 }
 
 .header__menu li {
@@ -119,16 +138,16 @@ nav {
     margin: 0 auto;
     padding-left: 0px;
     padding-right: 0px;
-    
 }
+
 
 /*Clases*/
 .clases {
     background-color: #2f4ccc;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 1%;
+    padding-bottom: 40%;
     width: 100%;
-    margin: auto;
+    margin-bottom: 5%;
 }
 
 .clases p {
@@ -140,10 +159,10 @@ nav {
     margin: auto;
     padding: 4%;
     display: grid;
-    grid-row-gap: 40px;
+    grid-row-gap: 1%;
     grid-column-gap: 4%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 300px);
+    grid-template-rows: repeat(12, 100px);
     grid-template-areas:
         "indoor"
         "funcional"
@@ -153,9 +172,9 @@ nav {
         "hiit"
         "gap"
         "power_bars"
-        "zumba"
+        "zumba" 
         "musculacion"
-        "power_local"
+        "power_local" 
         "x55";
 }
 
@@ -169,7 +188,7 @@ nav {
 
 .clases__grid a {
     color: whitesmoke;
-    font-size: x-large;
+    font-size: 1.8em;
     text-decoration: none;
     width: 100%;
     display: flex;
@@ -178,10 +197,16 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 
 .clases__grid a:hover {
-    opacity: 0.6;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.clases__grid a span:hover {
+    transform: scale(1.5);
 }
 
 .clases__indoor {
@@ -281,25 +306,19 @@ nav {
 }
 
 /*Video*/
-.video {
-    background-color: #323234;
-    margin: auto;
-    padding: 20px 0px 20px 0px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-}
-
 .video__container {
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 
-.video__container iframe {
-    width: 100% !important;
-    margin: auto;
+.video__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 
@@ -330,7 +349,7 @@ nav {
     text-transform: uppercase;
     text-align: center;
     margin: 1% 0;
-    font-size: small;
+    font-size: 7px;
 }
 
 .tabla tr td{
@@ -344,6 +363,28 @@ nav {
 
 
 /*Contacto*/
+.contacto__grid {
+    width: 100%;
+    margin: auto;
+    padding: 1% 4% 4% 4%;
+    background-color: #2f4ccc;
+    display: grid;
+    grid-row-gap: 1%;
+    grid-column-gap: 4%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"mapa mapa"
+                        "formulario formulario";
+}
+
+.map__container {
+    grid-area: mapa;
+}
+
+.form {
+    grid-area: formulario;
+}
+
 .contacto {
     background-color: #2f4ccc;
     display: flex;
@@ -352,47 +393,57 @@ nav {
     flex-wrap: nowrap;
 }
 
-.contacto__items {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: larger;
-    padding-top: 20px;
-    padding-bottom: 20px;
+/*Mapa*/
+.map__container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 75%;
 }
 
-.contacto__items span {
-    font-weight: 800;
-    font-size: x-large;
+.map__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
-.map {
-    display: flex;
-    padding: 4%;
-}
-
+/*Formulario*/
 .form {
     display: flex;
-    padding-left: 10%;
+    padding: 2% 4%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .form div {
     /* border: 1 solid red; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:space-around;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     align-content: space-around;
-    padding-top: 3px;
+    padding-top: 3%;
     font-size: larger;
 
 }
 
+.form input {
+    display: inline-block;
+    width: 100%;
+}
 
+
+.form span {
+    font-weight: 800;
+    font-size: x-large;
+}
+
+
+/*Redes*/
 .redes {
     background-color: #323234;
 }
@@ -428,8 +479,12 @@ nav {
 }
 
 .footer__logo img {
-    width: 35%;
+    width: 50%;
     margin: auto;
+}
+
+.footer__items * {
+    margin: 0%;
 }
 
 .footer__items ul {
@@ -465,15 +520,33 @@ nav {
 
 .portal h2 {
     text-decoration: underline;
-    
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.portal__contenido {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-content: center;
-    
+.portal__grid {
+    width: 100%;
+    margin: 4% 0;
+    padding: 2% 4% 4% 4%;
+    background-color: #2f4ccc;
+    display: grid;
+    grid-row-gap: 1%;
+    grid-column-gap: 0%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"bienvenido"
+                        "items"
+                        "items";
+}
+
+.portal__items {
+    grid-area: items;
+}
+
+.portal__runner {
+    grid-area: runner;
 }
 
 .portal__items {
@@ -495,14 +568,14 @@ nav {
 .ingreso__items ul li {
     display: flex;
     font-style: italic;
-    font-size: larger;
+    font-size: small;
     padding-left: 2%;
     justify-content: flex-start;
 }
 
 .ingreso__items h3 {
     padding-left: 2%;
-    font-size: larger;
+    font-size: small;
 
 }
 
@@ -512,20 +585,31 @@ nav {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    align-content: center;
-    padding-top: 3px;
-    padding-left: 2%;
-    font-size: larger;
+    padding: 4%;
+    font-size: small;
+}
+
+.ingreso__form input {
+    display: flex;
+    color: whitesmoke;
+    font-size: medium;
+    font-family: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+    background-color: orange;
+    padding: 1%;
 }
 
 .portal__runner {
-    display: flex;
-    justify-content: center;
+    display: none;
+    /* width: 100%;
+    margin: auto; */
+
 }
 
 .portal__runner img {
-    display: flex;
-    justify-content: center;   
+    width: 100%;
+    margin: auto;
 }
 
 /*Thank You Page*/
@@ -535,6 +619,74 @@ nav {
 
 
 /*Media Queries*/
+@media (min-width: 481px) and (max-width: 767px){
+    
+
+    .clases__grid {
+        width: 100%;
+        margin: auto;
+        padding: 4%;
+        display: grid;
+        grid-row-gap: 1%;
+        grid-column-gap: 4%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 300px);
+        grid-template-areas:
+            "indoor funcional"
+            "abd fight_do"
+            "axe hiit"
+            "gap power_bars"
+            "zumba musculacion"
+            "power_local x55";
+    }
+    
+    .clases {
+        background-color: #2f4ccc;
+        padding-top: 1%;
+        padding-bottom: 15%;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .horarios .tabla {
+        background-color: black;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1% 0;
+        font-size: 11px;
+    }
+
+    .portal {
+        margin: auto;
+        width: 100%;
+        padding-top: 7%;
+    }
+
+    .portal__grid {
+        width: 100%;
+        margin: auto;
+        padding: 2% 4% 4% 4%;
+        background-color: #2f4ccc;
+        display: grid;
+        grid-row-gap: 1%;
+        grid-column-gap: 0%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:"items"
+                            "items";
+    }
+
+    .portal h2 {
+        text-decoration: underline;
+        margin: 10% 0 2% 0;
+        padding: 2% 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
 @media (min-width: 768px) {
     .header {
         font-weight: bold;
@@ -557,12 +709,16 @@ nav {
         flex-direction: row;
     }
 
+    .menu_btn {
+        display: none;
+    }
+
     .clases__grid {
         width: 100%;
         margin: auto;
         padding: 4%;
         display: grid;
-        grid-row-gap: 40px;
+        grid-row-gap: 2%;
         grid-column-gap: 4%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(4, 300px);
@@ -572,9 +728,12 @@ nav {
                             "musculacion power_local x55"
     }
 
-    .video__container iframe {
-        width: 560px !important;
-        margin: auto;
+    .clases {
+        background-color: #2f4ccc;
+        padding-top: 1%;
+        padding-bottom: 5%;
+        width: 100%;
+        margin-bottom: 5%;
     }
 
     .horarios .tabla {
@@ -585,15 +744,65 @@ nav {
         font-size: medium;
     }
 
-    .contacto__items {
+    .contacto__grid {
+        width: 100%;
+        margin: auto;
+        padding: 1% 4% 4% 4%;
+        background-color: #2f4ccc;
+        display: grid;
+        grid-row-gap: 4%;
+        grid-column-gap: 4%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"mapa formulario"
+                            "mapa formulario";
+    }
+    
+
+    .contacto {
+        background-color: #2f4ccc;
         display: flex;
         justify-content: space-evenly;
-        flex-direction: row;
-        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .portal {
+        margin: auto;
+        width: 100%;
         font-size: larger;
-        padding-top: 20px;
-        
+        padding-top: 7%;
+    }
+
+    .portal__grid {
+        width: 100%;
+        margin: auto;
+        padding: 1% 4% 4% 4%;
+        background-color: #2f4ccc;
+        font-size: large;
+        display: grid;
+        grid-row-gap: 1%;
+        grid-column-gap: 0%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"items runner"
+                            "items runner";
+    }
+
+    .portal__runner {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    }
+
+    .portal h2 {
+        text-decoration: underline;
+        margin: 2% 0 2% 0;
+        padding: 2% 0;
     }
 
 }
+
+
+
 

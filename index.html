@@ -19,7 +19,8 @@
             <img src="assets/logo.png" alt="TeraClub" title="TeraClub"/>
         </div>
         <h1>TeraClub</h1>
-        <nav>    
+        <nav>
+            <button class="menu_btn">Menú</button>    
             <ul class="header__menu">
                 <li><a href="index.html">Inicio</a></li>         
                 <li><a href="#clases">Clases</a></li>         
@@ -35,10 +36,10 @@
             <h2>Slider</h2>
             <!--Imágenes del slider-->
             <ul class="slider__menu">
-                <li><img src="assets/slider/slider1.jpg" width="100%" alt="grupo_aerobico"/></li>
-                <li><img src="assets/slider/slider2.jpg" width="100%" alt="abdominales"/></li>
-                <li><img src="assets/slider/slider3.jpg" width="100%" alt="levantamiento"/></li>
-                <li><img src="assets/slider/slider4.jpg" width="100%" alt="plancha"/></li>
+                <li><img src="assets/slider/slider1.jpg" width="100%" alt="grupo_aerobico" title="grupo_aerobico"/></li>
+                <li><img src="assets/slider/slider2.jpg" width="100%" alt="abdominales" title="abdominales"/></li>
+                <li><img src="assets/slider/slider3.jpg" width="100%" alt="levantamiento" title="levantamiento"/></li>
+                <li><img src="assets/slider/slider4.jpg" width="100%" alt="plancha" title="plancha"/></li>
             </ul>    
         </section>
         
@@ -64,7 +65,7 @@
         <section class="video">
             <!--Video institucional/motivacional-->
             <div class="video__container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/l9STK-VptKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                <iframe class="video__iframe" src="https://www.youtube.com/embed/l9STK-VptKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
             </div>
         </section>
         
@@ -187,10 +188,10 @@
         </section>
         
         <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
-            <div class="contacto__items">
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.288862993387!2d-58.51729145700539!3d-34.64068023205634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc84eb3ba8753%3A0xf9afe94f8456e8a3!2sAv.%20Larraz%C3%A1bal%20100%2C%20C1408HEN%20CABA!5e0!3m2!1ses!2sar!4v1657219678007!5m2!1ses!2sar" width="490" height="490" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2 class="contacto__h2">Contacto</h2>
+            <div class="contacto__grid">
+                <div class="map__container">
+                    <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.288862993387!2d-58.51729145700539!3d-34.64068023205634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc84eb3ba8753%3A0xf9afe94f8456e8a3!2sAv.%20Larraz%C3%A1bal%20100%2C%20C1408HEN%20CABA!5e0!3m2!1ses!2sar!4v1657219678007!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="form">
                     <form action="thank_you.html" target="_blank">
@@ -260,6 +261,5 @@
         </div>
         <small> Copyright 2022 - Martin Suarez</small>
     </footer>
-    
 </body>
 </html>
