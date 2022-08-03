@@ -107,6 +107,11 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     font-size: medium;
+    /*Transición*/
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 }
 
 .header__menu li a:hover {
