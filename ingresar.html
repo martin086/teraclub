@@ -18,7 +18,7 @@
     <!--Fila de Logo + Menu-->
     <header class="header">
         <div class="header__logo">
-            <img src="assets/logo.png" alt="TeraClub" title="TeraClub" width="100px" height="100px"/>
+            <img src="assets/logo.png" alt="TeraClub" title="TeraClub"/>
         </div>
         <h1>TeraClub</h1>
         <nav>
@@ -32,52 +32,62 @@
     <main>
         
         <section class="portal">
-            <h2 class="bienvenido h2">Bienvenido al portal de socios</h2>
-            <div class="portal__grid">
-                
+            <div class="container portal__grid">
                 <div class="portal__items">
-                    <div class="ingreso">
-                        <div class="ingreso__items">
-                            <h3>Desde aquí podras acceder a:</h3>
-                            <ul>
-                                <li>- Rutina de entrenamiento personalizada.</li>
-                                <li>- Plan nutricional a medida.</li>
-                                <li>- Seguimiento de objetivos y metas.</li>
-                                <li>- Eventos, novedades y más...</li>
-                            </ul>
-                        </div>   
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="bienvenido h2">Bienvenido al portal de socios</h2>
+                        </div>
                     </div>
-                    <div class="ingreso__form">
-                        <form action="thank_you.html">    
-                            <h3>Ingresa tus datos para acceder</h3>
-                            <div class="input-group has-validation">
-                                <span class="input-group-text">Usuario</span>
-                                <div class="form-floating is-invalid">            
-                                    <input type="email" class="form-control" id="usuario_ingreso" value="Tu e-mail"/>
-                                    <label for="usuario_ingreso"></label>
+                    <div class="row">
+                        <div class="col-6 ingreso">
+                            <div class="ingreso__items">
+                                <h3>Desde aquí podras acceder a:</h3>
+                                <ul>
+                                    <li>- Rutina de entrenamiento personalizada.</li>
+                                    <li>- Plan nutricional a medida.</li>
+                                    <li>- Seguimiento de objetivos y metas.</li>
+                                    <li>- Eventos, novedades y más...</li>
+                                </ul>
+                            </div>   
+                        </div>
+                        <div class="col-6 ingreso__form">
+                            <form action="thank_you.html">    
+                                <h3>Ingresa tus datos para acceder</h3>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">Usuario</span>
+                                    <div class="form-floating is-invalid">            
+                                        <input type="email" class="form-control" id="usuario_ingreso" value="Tu e-mail"/>
+                                        <label for="usuario_ingreso"></label>
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa tu email.
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    Por favor, ingresa tu email.
-                                </div>
-                            </div>
-                            <div class="input-group has-validation">
-                                <span class="input-group-text">Password</span>
-                                <div class="form-floating is-invalid">            
-                                    <input type="password" class="form-control" id="password_ingreso" value="Tu contraseña"/>
-                                    <label for="password_ingreso"></label>
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor, ingresa tu contraseña.
-                                </div>
-                            <div>
-                                <input type="submit" class="form-control"/> 
-                            </div>             
-                        </form>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">Password</span>
+                                    <div class="form-floating is-invalid">            
+                                        <input type="password" class="form-control" id="password_ingreso" value="Tu contraseña"/>
+                                        <label for="password_ingreso"></label>
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa tu contraseña.
+                                    </div>
+                                <div>
+                                    <input type="submit" class="form-control"/> 
+                                </div>             
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row portal__img">
+                        <div class="col portal__runner">
+                            <img src="assets/runner.png" alt="runner" title="Runner"/>
+                        </div>
+                        <div class="col portal__ropes">
+                            <img src="assets/crossfit-ropes.png" alt="ropes" title="Ropes"/>
+                        </div>
                     </div>
                 </div>
-                <div class="portal__runner">
-                    <img src="assets/runner.png" alt="runner" title="Runner"/>
-                </div>        
             </div>
         </section>    
     </main>
