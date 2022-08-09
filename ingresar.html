@@ -15,22 +15,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--Fila de Logo + Menu-->
-    <header class="header">
-        <div class="header__logo">
-            <img src="assets/logo.png" alt="TeraClub" title="TeraClub"/>
-        </div>
-        <h1>TeraClub</h1>
-        <nav>
-            <button class="menu_btn">Menú</button>    
-            <ul class="header__menu">
-                <li><a href="index.html">Volver a la Home</a></li>
-            </ul>
+    <header class="header sticky-top">
+        <nav class="navbar sticky-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/Web/Coderhouse/Desafios/responsive/assets/logo.png" alt="LogoTC" title="Logo TeraClub" width="50" height="50" class="d-inline-block align-text-center">
+                    TeraClub
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver a Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <!--Fin fila Logo + Menu-->
     <main>
-        
         <section class="portal">
             <div class="container portal__grid">
                 <div class="portal__items">

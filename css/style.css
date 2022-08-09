@@ -31,7 +31,7 @@ h2 {
 
 
 /*Header*/
-.header {
+/* .header {
     font-weight: bold;
     font-style: normal;
     font-size: 20px;
@@ -39,15 +39,13 @@ h2 {
     position: fixed;
     width: 100%;
     margin: auto;
-    /*Flex*/
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-end;
     z-index: 1;
-
-}
+} */
 
 .header__logo {
     width: 100px;
@@ -67,44 +65,19 @@ h2 {
     font-size: xx-large;
     padding: 0 5px;
     margin: 0 1px;
-    /* visibility: hidden; */
+    
 }
 
-nav {
+/* nav {
     display: flex;
     flex:1;
     justify-content: flex-end;
 
-}
+} */
 
-.menu_btn {
-    display: flex;
-    color: whitesmoke;
-    font-size: medium;
-    font-family: inherit;
-    font-weight: inherit;
-    text-transform: uppercase;
-    background-color: transparent;
-    background-image: url(../assets/icons/menu.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    border: none;
-    padding: 10px 20px;
-    padding-left: 30px;
-}
-
-.header__menu {
-    display: none;
-}
-
-.header__menu li {
-    padding: 0 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-.header__menu li a {
-    color: whitesmoke;
+.navbar {
+    background-image: linear-gradient(to bottom, #2f4ccc 90%, transparent 100%);
+    /* background-color: #2f4ccc; */
     text-decoration: none;
     text-transform: uppercase;
     font-size: medium;
@@ -115,37 +88,30 @@ nav {
     transition-delay: 0s;
 }
 
-.header__menu li a:hover {
+.navbar div li a {
+    color: whitesmoke;
+}
+
+.navbar div li a:hover {
     color: orange;
     text-decoration: underline;
     text-transform: uppercase;
     font-size: medium;
 }
 
+.dropdown-item {
+    color: black!important;
+}
+
+.navbar-brand {
+    color: whitesmoke;
+}
+
 /*Slider*/
-.slider h2 {
-    display: none;
-}
 
-.slider {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: normal;
-    justify-content: center;
+.carousel-caption {
+    bottom: 12.5rem;
 }
-
-.slider__menu {
-    width: 100%;
-}
-
-.slider__menu li {
-    list-style-type: none;
-    margin: 0 auto;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 
 /*Clases*/
 .clases {
@@ -520,7 +486,6 @@ nav {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-content: flex-start;
-    padding-top: 10%;
 }
 
 .portal h2 {
@@ -627,7 +592,6 @@ nav {
 
 /*Media Queries*/
 @media (min-width: 481px){
-    
 
     .clases__grid {
         grid-template-columns: 1fr 1fr;
@@ -652,7 +616,6 @@ nav {
     .portal {
         margin: auto;
         width: 100%;
-        padding-top: 7%;
     }
 
     .portal h2 {
@@ -670,18 +633,6 @@ nav {
 
 
 @media (min-width: 768px) {
-    .header {
-        justify-content: center;
-    }
-
-    .header__menu {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .menu_btn {
-        display: none;
-    }
 
     .clases__grid {
         grid-row-gap: 2%;
@@ -711,7 +662,6 @@ nav {
         margin: auto;
         width: 100%;
         font-size: larger;
-        padding-top: 7%;
     }
 
     /* .portal__grid {

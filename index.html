@@ -15,28 +15,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--Fila de Logo + Menu-->
-    <header class="header">
-        <div class="header__logo">
-            <img src="assets/logo.png" alt="TeraClub" title="TeraClub"/>
-        </div>
-        <h1>TeraClub</h1>
-        <nav>
-            <button class="menu_btn">Menú</button>    
-            <ul class="header__menu">
-                <li><a href="index.html">Inicio</a></li>         
-                <li><a href="#clases">Clases</a></li>         
-                <li><a href="#horarios">Horarios</a></li>                             
-                <li><a href="#contacto">Contacto</a></li>         
-                <li><a href="ingresar.html" target="_blank">Ingresar</a></li>         
-            </ul>
+    <header class="header sticky-top">
+        <nav class="navbar sticky-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/Web/Coderhouse/Desafios/responsive/assets/logo.png" alt="LogoTC" title="Logo TeraClub" width="50" height="50" class="d-inline-block align-text-center">
+                    TeraClub
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Clases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#clases__indoor">Indoor</a></li>
+                                <li><a class="dropdown-item" href="#clases__funcional">Funcional</a></li>
+                                <li><a class="dropdown-item" href="#clases__abd">ABD</a></li>
+                                <li><a class="dropdown-item" href="#clases__fight_do">Fight-Do</a></li>
+                                <li><a class="dropdown-item" href="#clases__axe">Axé</a></li>
+                                <li><a class="dropdown-item" href="#clases__hiit">HIIT</a></li>
+                                <li><a class="dropdown-item" href="#clases__gap">GAP</a></li>
+                                <li><a class="dropdown-item" href="#clases__power_bars">Power Bars</a></li>
+                                <li><a class="dropdown-item" href="#clases__zumba">Zumba</a></li>
+                                <li><a class="dropdown-item" href="#clases__musculacion">Musculación</a></li>
+                                <li><a class="dropdown-item" href="#clases__power_local">Power Local</a></li>
+                                <li><a class="dropdown-item" href="#clases__x55">X55</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#horarios">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ingresar.html" target="_blank">Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <!--Fin fila Logo + Menu-->
     <main>
         <section class="slider">
-            <h2>Slider</h2>
-            <!--Imágenes del slider-->
+            <!-- <h2>Slider</h2> -->
             <div id="carouseltc" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -73,35 +102,31 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
         </section>
-        
         <section id="clases" class="clases">
             <h2>Clases</h2>
             <p>Elegí la clase que mejor se adapte a tu estilo. Tenemos muchas opciones para vos. ¡No te quedes afuera!</p>
             <div class="clases__grid">
-                <div class="clases__indoor"><a href="#"><span>Indoor</span></a></div>
-                <div class="clases__funcional"><a href="#"><span>Funcional</span></a></div>
-                <div class="clases__abd"><a href="#"><span>ABD</span></a></div>
-                <div class="clases__fight_do"><a href="#"><span>Fight Do</span></a></div>
-                <div class="clases__axe"><a href="#"><span>Axé</span></a></div>
-                <div class="clases__hiit"><a href="#"><span>HIIT</span></a></div>
-                <div class="clases__gap"><a href="#"><span>GAP</span></a></div>
-                <div class="clases__power_bars"><a href="#"><span>Power Bars</span></a></div>
-                <div class="clases__zumba"><a href="#"><span>Zumba</span></a></div>
-                <div class="clases__musculacion"><a href="#"><span>Musculación</span></a></div>
-                <div class="clases__power_local"><a href="#"><span>Power Local</span></a></div>
-                <div class="clases__x55"><a href="#"><span>X55</span></a></div>
+                <div id="clases__indoor" class="clases__indoor"><a href="#"><span>Indoor</span></a></div>
+                <div id="clases__funcional" class="clases__funcional"><a href="#"><span>Funcional</span></a></div>
+                <div id="clases__abd" class="clases__abd"><a href="#"><span>ABD</span></a></div>
+                <div id="clases__fight_do" class="clases__fight_do"><a href="#"><span>Fight Do</span></a></div>
+                <div id="clases__axe" class="clases__axe"><a href="#"><span>Axé</span></a></div>
+                <div id="clases__hiit" class="clases__hiit"><a href="#"><span>HIIT</span></a></div>
+                <div id="clases__gap" class="clases__gap"><a href="#"><span>GAP</span></a></div>
+                <div id="clases__power_bars" class="clases__power_bars"><a href="#"><span>Power Bars</span></a></div>
+                <div id="clases__zumba" class="clases__zumba"><a href="#"><span>Zumba</span></a></div>
+                <div id="clases__musculacion" class="clases__musculacion"><a href="#"><span>Musculación</span></a></div>
+                <div id="clases__power_local" class="clases__power_local"><a href="#"><span>Power Local</span></a></div>
+                <div id="clases__x55" class="clases__x55"><a href="#"><span>X55</span></a></div>
             </div>            
         </section>
-        
         <section class="video">
             <!--Video institucional/motivacional-->
             <div class="video__container">
                 <iframe class="video__iframe" src="https://www.youtube.com/embed/l9STK-VptKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
             </div>
         </section>
-        
         <section id="horarios" class="horarios">
             <h2>Horarios</h2>
             <p>Nuestro salón de musculación se encuentra abierto de lunes a viernes de 8 a 23 hs. y los días sábados de 10 a 18 hs.</p>
@@ -219,7 +244,6 @@
                 </table>
             </div>
         </section>
-        
         <section id="contacto" class="contacto">
             <h2 class="contacto__h2">Contacto</h2>
             <div class="contacto__grid">
@@ -264,7 +288,6 @@
             </div>
         </section>
     </main>
-    <!--Inicio de footer-->
     <footer class="footer">
         <div class="footer__items">
             <div class="footer__logo">
