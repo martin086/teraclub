@@ -495,7 +495,8 @@ h2 {
 
 .portal h2 {
     text-decoration: underline;
-    margin-top: 15%;
+    margin: 8% 0 2% 0;
+    padding: 2% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -536,13 +537,14 @@ h2 {
     flex:1;
 }
 
-.ingreso {
+/* .ingreso {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-content: center;
-    padding: 2% 0 2% 0;
-}
+    padding: 2%;
+    width: 100%;
+} */
 
 .ingreso__items ul li {
     display: flex;
@@ -557,14 +559,16 @@ h2 {
 
 }
 
-.ingreso__form form {
+/* .ingreso__form form {
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     font-size: small;
-}
+    padding: 2%;
+    width: 100%;
+} */
 
 .ingreso__form input {
     display: flex;
@@ -621,11 +625,6 @@ h2 {
     .portal {
         margin: auto;
         width: 100%;
-    }
-
-    .portal h2 {
-        margin: 10% 0 2% 0;
-        padding: 2% 0;
     }
 
     /* .portal__grid {
@@ -690,11 +689,6 @@ h2 {
         width: 100%;
         margin: auto;
         }
-
-    .portal h2 {
-        margin: 2% 0 2% 0;
-        padding: 2% 0;
-    }
 
 }
 
