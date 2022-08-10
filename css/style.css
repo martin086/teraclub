@@ -312,7 +312,6 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     margin: 1% 0;
-    font-size: 7px;
 }
 
 .tabla tr td{
@@ -323,7 +322,6 @@ h2 {
     border-right: none;
     border-bottom: none;
 }
-
 
 /*Contacto*/
 .contacto__grid {
@@ -499,21 +497,6 @@ h2 {
     justify-content: center;
 }
 
-/* .portal__grid {
-    width: 100%;
-    margin: 4% 0;
-    padding: 2% 4% 4% 4%;
-    background-color: #2f4ccc;
-    display: grid;
-    grid-row-gap: 1%;
-    grid-column-gap: 0%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:"bienvenido"
-                        "items"
-                        "items";
-} */
-
 .portal__items {
     grid-area: items;
 }
@@ -534,15 +517,6 @@ h2 {
     flex:1;
 }
 
-/* .ingreso {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-content: center;
-    padding: 2%;
-    width: 100%;
-} */
-
 .ingreso__items ul li {
     display: flex;
     font-style: italic;
@@ -555,17 +529,6 @@ h2 {
     font-size: x-large;
 
 }
-
-/* .ingreso__form form {
-    text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: small;
-    padding: 2%;
-    width: 100%;
-} */
 
 .ingreso__form input {
     display: flex;
@@ -615,20 +578,10 @@ h2 {
         padding-bottom: 15%;
     }
 
-    .horarios .tabla {
-        font-size: 11px;
-    }
-
     .portal {
         margin: auto;
         width: 100%;
     }
-
-    /* .portal__grid {
-        margin: auto;
-        grid-template-areas:"items"
-                            "items";
-    } */
     
 }
 
@@ -647,10 +600,6 @@ h2 {
 
     .clases {
         padding-bottom: 5%;
-    }
-
-    .horarios .tabla {
-        font-size: medium;
     }
 
     .contacto__grid {
