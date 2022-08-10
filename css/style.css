@@ -303,7 +303,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: auto;
     padding-bottom: 4%;
 }
 
@@ -311,7 +310,8 @@ h2 {
     background-color: black;
     text-transform: uppercase;
     text-align: center;
-    margin: 1% 0;
+    margin: auto;
+    max-width: 75%;
 }
 
 .tabla tr td{
@@ -425,7 +425,7 @@ h2 {
 
 .footer__items {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-items: flex-start;
     width: 100%;
@@ -440,21 +440,21 @@ h2 {
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
-    border-right: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
     flex: auto;
     margin: 5px auto;
     text-align: center;
 }
 
 .footer__logo img {
-    width: 40%;
+    width: 30%;
     margin: auto;
 }
 
 .footer__items ul {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -576,6 +576,19 @@ h2 {
     
     .clases {
         padding-bottom: 15%;
+    }
+
+    .footer__items {
+        flex-flow: row nowrap;
+    }
+
+    .footer__items div {
+        border-top: none;
+        border-right: 1px solid whitesmoke;
+    }
+
+    .footer__logo img {
+        width: 40%;
     }
 
     .portal {
