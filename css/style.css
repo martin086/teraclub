@@ -356,6 +356,10 @@ h2 {
     grid-area: formulario;
 }
 
+.form label {
+    width: 100%;
+}
+
 .contacto {
     background-color: #2f4ccc;
     display: flex;
@@ -363,6 +367,7 @@ h2 {
     flex-direction: column;
     flex-wrap: nowrap;
 }
+
 
 /*Mapa*/
 .map__container {
