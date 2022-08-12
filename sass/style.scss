@@ -1,0 +1,554 @@
+$color_1: whitesmoke;
+$color_2: orange;
+$color_3: black;
+$font-family_1: 'Poppins', sans-serif;
+$background-color_1: #323234;
+$background-color_2: #2f4ccc;
+$background-color_3: black;
+$background-color_4: orange;
+$border-color_1: orange;
+
+
+html {
+	padding: 0;
+	margin: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+	color: $color_1;
+}
+* {
+	box-sizing: border-box;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 10px auto;
+	padding: 20px auto;
+}
+.header__logo {
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	img {
+		width: 100%;
+		margin: auto;
+	}
+}
+.header {
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		display: flex;
+		font-size: xx-large;
+		padding: 0 5px;
+		margin: 0 1px;
+	}
+}
+.navbar {
+	background-image: linear-gradient(to bottom, #2f4ccc 90%, transparent 100%);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: medium;
+	transition-property: color;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	div {
+		li {
+			a {
+				color: $color_1;
+				&:hover {
+					color: $color_2;
+					text-decoration: underline;
+					text-transform: uppercase;
+					font-size: medium;
+				}
+			}
+		}
+	}
+}
+.dropdown-item {
+	color: $color_3 !important;
+}
+.navbar-brand {
+	color: $color_1;
+}
+.carousel-caption {
+	bottom: 45%;
+}
+.clases {
+	background-color: $background-color_2;
+	padding-top: 1%;
+	padding-bottom: 40%;
+	width: 100%;
+	margin-bottom: 5%;
+	p {
+		text-align: center;
+	}
+}
+.clases__grid {
+	width: 100%;
+	margin: auto;
+	padding: 4%;
+	display: grid;
+	grid-row-gap: 1%;
+	grid-column-gap: 4%;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(12, 100px);
+	grid-template-areas: "indoor" "funcional" "abd" "fight_do" "axe" "hiit" "gap" "power_bars" "zumba" "musculacion" "power_local" "x55";
+	>div {
+		display: flex;
+		justify-content: center;
+		align-items: inherit;
+	}
+	a {
+		color: $color_1;
+		font-size: 1.8em;
+		text-decoration: none;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		&:hover {
+			opacity: 0.5;
+			transform: scale(1.1);
+		}
+		span {
+			&:hover {
+				transform: scale(1.3);
+			}
+		}
+	}
+}
+.clases__indoor {
+	grid-area: indoor;
+	a {
+		background-image: url("../assets/clases/01-indoor.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__funcional {
+	grid-area: funcional;
+	a {
+		background-image: url("../assets/clases/02-funcional.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__abd {
+	grid-area: abd;
+	a {
+		background-image: url("../assets/clases/03-abd.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__fight_do {
+	grid-area: fight_do;
+	a {
+		background-image: url("../assets/clases/04-fightdo.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__axe {
+	grid-area: axe;
+	a {
+		background-image: url("../assets/clases/05-axe.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__hiit {
+	grid-area: hiit;
+	a {
+		background-image: url("../assets/clases/06-hiit.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__gap {
+	grid-area: gap;
+	a {
+		background-image: url("../assets/clases/07-gap.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__power_bars {
+	grid-area: power_bars;
+	a {
+		background-image: url("../assets/clases/08-powerbars.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__zumba {
+	grid-area: zumba;
+	a {
+		background-image: url("../assets/clases/09-zumba.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__musculacion {
+	grid-area: musculacion;
+	a {
+		background-image: url("../assets/clases/10-musculacion.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__power_local {
+	grid-area: power_local;
+	a {
+		background-image: url("../assets/clases/11-powerlocal.jpg");
+		background-size: 100% auto;
+	}
+}
+.clases__x55 {
+	grid-area: x55;
+	a {
+		background-image: url("../assets/clases/12-x55.jpg");
+		background-size: 100% auto;
+	}
+}
+.video__container {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+}
+.video__iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.horarios {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: space-around;
+	p {
+		text-align: center;
+		text-transform: none;
+	}
+	div {
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		padding-bottom: 4%;
+	}
+	.tabla {
+		background-color: $background-color_3;
+		text-transform: uppercase;
+		text-align: center;
+		margin: auto;
+		max-width: 75%;
+	}
+}
+.tabla {
+	tr {
+		td {
+			border-top: 1px;
+			border-color: $border-color_1;
+			border-style: solid;
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
+		}
+	}
+}
+.contacto__grid {
+	width: 100%;
+	margin: auto;
+	padding: 1% 4% 4% 4%;
+	background-color: $background-color_2;
+	display: grid;
+	grid-row-gap: 1%;
+	grid-column-gap: 4%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "mapa mapa" "formulario formulario";
+}
+.map__container {
+	grid-area: mapa;
+	position: relative;
+	overflow: hidden;
+	padding-top: 75%;
+}
+.form {
+	grid-area: formulario;
+	display: flex;
+	padding: 2% 4%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	label {
+		width: 100%;
+	}
+	div {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: space-around;
+		padding-top: 3%;
+		font-size: larger;
+	}
+	input {
+		display: inline-block;
+		width: 100%;
+	}
+	span {
+		font-weight: 800;
+		font-size: x-large;
+	}
+}
+.contacto {
+	background-color: $background-color_2;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.map__iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.redes {
+	background-color: $background-color_1;
+	margin: auto;
+	position: relative;
+}
+.cont_redes {
+	div {
+		img {
+			display: flex;
+			width: 100%;
+			}
+	}
+	
+}
+.frases {
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: calc(0.65rem + 1vw);
+	font-weight: 200;
+	backdrop-filter: blur(14px) brightness(80%);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+	span {
+		padding: 0 1%;
+	}
+	.calidad {
+		color: black;
+		font-weight: bold;
+	}
+}
+.footer {
+	background-color: $background-color_1;
+	text-transform: uppercase;
+	display: flex;
+	flex-flow: column nowrap;
+	font-size: 12px;
+	align-items: center;
+	position: relative;
+	bottom: 0;
+	margin-top: 1%;
+	h3 {
+		font-size: calc(0.75em + 1vw);
+	}
+	small {
+		display: flex;
+		margin: 1% 1%;
+	}
+}
+.footer__items {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 100%;
+	flex: auto;
+	margin: 5px auto;
+	text-align: center;
+	div {
+		width: 100%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-content: center;
+		border-top: 1px solid whitesmoke;
+		flex: auto;
+		margin: 5px auto;
+		text-align: center;
+		ul {
+			li {
+				img {
+					width: 55%;
+				}
+			}
+		}
+	}
+	ul {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+	a {
+		color: $color_1;
+		text-decoration: none;
+		font-size: calc(0.3em + 1vw);
+		margin: auto;
+	}
+	p {
+		color: $color_1;
+		text-decoration: none;
+		font-size: calc(0.3em + 1vw);
+		margin: auto;
+	}
+}
+.footer__logo {
+	img {
+		width: 25%;
+		margin: auto;
+	}
+}
+.portal {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	align-content: flex-start;
+	h2 {
+		text-decoration: underline;
+		margin: 8% 0 2% 0;
+		padding: 2% 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.portal__items {
+	grid-area: items;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex: 1;
+}
+.portal__runner {
+	grid-area: runner;
+	display: none;
+}
+.portal__ropes {
+	grid-area: ropes;
+	display: none;
+}
+.ingreso__items {
+	ul {
+		li {
+			display: flex;
+			font-style: italic;
+			font-size: large;
+			padding-left: 2%;
+			justify-content: flex-start;
+		}
+	}
+	h3 {
+		font-size: x-large;
+	}
+}
+.ingreso__form {
+	input {
+		display: flex;
+		color: $color_1;
+		font-size: medium;
+		font-family: $font-family_1;
+		font-weight: inherit;
+		text-transform: uppercase;
+		background-color: $background-color_4;
+	}
+}
+.portal__img {
+	img {
+		width: 100%;
+		margin: auto;
+	}
+}
+.thank_you {
+	padding-left: 2%;
+}
+@media (min-width: 481px) {
+	.clases__grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(6, 300px);
+		grid-template-areas: "indoor funcional" "abd fight_do" "axe hiit" "gap power_bars" "zumba musculacion" "power_local x55";
+	}
+	.clases {
+		padding-bottom: 15%;
+	}
+	.footer__items {
+		flex-flow: row nowrap;
+		div {
+			border-top: none;
+			border-right: 1px solid whitesmoke;
+		}
+	}
+	.footer__logo {
+		img {
+			width: 40%;
+		}
+	}
+	.portal {
+		margin: auto;
+		width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	.clases__grid {
+		grid-row-gap: 2%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(4, 300px);
+		grid-template-areas: "indoor funcional abd" "fight_do axe hiit" "gap power_bars zumba" "musculacion power_local x55";
+	}
+	.clases {
+		padding-bottom: 5%;
+	}
+	.contacto__grid {
+		grid-row-gap: 4%;
+		grid-template-areas: "mapa formulario" "mapa formulario";
+	}
+	.portal {
+		margin: auto;
+		width: 100%;
+		font-size: larger;
+	}
+	.portal__runner {
+		display: flex;
+		width: 100%;
+		margin: auto;
+	}
+	.portal__ropes {
+		display: flex;
+		width: 100%;
+		margin: auto;
+	}
+}
