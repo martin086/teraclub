@@ -367,9 +367,18 @@ h2 {
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-content: flex-start; }
+  .portal .bienvenido {
+    padding: 3%;
+    text-transform: uppercase;
+    border: 1px solid orange; }
+  .portal .row {
+    margin-top: 1%;
+    padding-top: 1%; }
+  .portal .ingreso__form {
+    margin-top: 2%; }
   .portal h2 {
     text-decoration: underline;
-    margin: 8% 0 2% 0;
+    margin: 0 0 5% 0;
     padding: 2% 0;
     display: flex;
     flex-wrap: wrap;
