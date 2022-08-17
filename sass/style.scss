@@ -76,13 +76,13 @@ h2 {
 		}
 	}
 }
-.dropdown-item {
+.clases_menu {
 	color: $color_3 !important;
 }
-.navbar-brand {
+.barra_logo {
 	color: $color_1;
 }
-.carousel-caption {
+.texto_slider {
 	bottom: 45%;
 }
 .clases {
@@ -371,7 +371,7 @@ h2 {
 	align-items: center;
 	position: relative;
 	bottom: 0;
-	margin-top: 1%;
+	margin-top: 3%;
 	h3 {
 		font-size: calc(0.75em + 1vw);
 	}
@@ -416,19 +416,19 @@ h2 {
 	a {
 		color: $color_1;
 		text-decoration: none;
-		font-size: calc(0.3em + 1vw);
+		font-size: calc(0.5em + 1vw);
 		margin: auto;
 	}
 	p {
 		color: $color_1;
 		text-decoration: none;
-		font-size: calc(0.3em + 1vw);
+		font-size: calc(0.5em + 1vw);
 		margin: auto;
 	}
 }
 .footer__logo {
 	img {
-		width: 25%;
+		width: 30%;
 		margin: auto;
 	}
 }
