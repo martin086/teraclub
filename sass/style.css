@@ -73,6 +73,12 @@ h2 {
   margin-bottom: 5%; }
   .clases p {
     text-align: center; }
+  @media (min-width: 481px) {
+    .clases {
+      padding-bottom: 15%; } }
+  @media (min-width: 768px) {
+    .clases {
+      padding-bottom: 5; } }
 
 .clases__grid {
   width: 100%;
@@ -104,6 +110,17 @@ h2 {
       transform: scale(1.1); }
     .clases__grid a span:hover {
       transform: scale(1.3); }
+  @media (min-width: 481px) {
+    .clases__grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 300px);
+      grid-template-areas: "indoor funcional" "abd fight_do" "axe hiit" "gap power_bars" "zumba musculacion" "power_local x55"; } }
+  @media (min-width: 768px) {
+    .clases__grid {
+      grid-row-gap: 2%;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, 300px);
+      grid-template-areas: "indoor funcional abd" "fight_do axe hiit" "gap power_bars zumba" "musculacion power_local x55"; } }
 
 .clases__indoor {
   grid-area: indoor; }
@@ -229,6 +246,10 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "mapa mapa" "formulario formulario"; }
+  @media (min-width: 768px) {
+    .contacto__grid {
+      grid-row-gap: 4%;
+      grid-template-areas: "mapa formulario" "mapa formulario"; } }
 
 .map__container {
   grid-area: mapa;
@@ -357,10 +378,20 @@ h2 {
     text-decoration: none;
     font-size: calc(0.5em + 1vw);
     margin: auto; }
+  @media (min-width: 481px) {
+    .footer__items {
+      flex-flow: row nowrap; }
+      .footer__items div {
+        border-top: none;
+        border-right: 1px solid whitesmoke; } }
 
 .footer__logo img {
   width: 30%;
   margin: auto; }
+
+@media (min-width: 481px) {
+  .footer__logo img {
+    width: 40%; } }
 
 .portal {
   display: flex;
@@ -383,6 +414,15 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+  @media (min-width: 481px) {
+    .portal {
+      margin: auto;
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .portal {
+      margin: auto;
+      width: 100%;
+      font-size: larger; } }
 
 .portal__items {
   grid-area: items;
@@ -395,10 +435,20 @@ h2 {
 .portal__runner {
   grid-area: runner;
   display: none; }
+  @media (min-width: 768px) {
+    .portal__runner {
+      display: flex;
+      width: 100%;
+      margin: auto; } }
 
 .portal__ropes {
   grid-area: ropes;
   display: none; }
+  @media (min-width: 768px) {
+    .portal__ropes {
+      display: flex;
+      width: 100%;
+      margin: auto; } }
 
 .ingreso__items ul li {
   display: flex;
@@ -425,47 +475,5 @@ h2 {
 
 .thank_you {
   padding-left: 2%; }
-
-@media (min-width: 481px) {
-  .clases__grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 300px);
-    grid-template-areas: "indoor funcional" "abd fight_do" "axe hiit" "gap power_bars" "zumba musculacion" "power_local x55"; }
-  .clases {
-    padding-bottom: 15%; }
-  .footer__items {
-    flex-flow: row nowrap; }
-    .footer__items div {
-      border-top: none;
-      border-right: 1px solid whitesmoke; }
-  .footer__logo img {
-    width: 40%; }
-  .portal {
-    margin: auto;
-    width: 100%; } }
-
-@media (min-width: 768px) {
-  .clases__grid {
-    grid-row-gap: 2%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 300px);
-    grid-template-areas: "indoor funcional abd" "fight_do axe hiit" "gap power_bars zumba" "musculacion power_local x55"; }
-  .clases {
-    padding-bottom: 5%; }
-  .contacto__grid {
-    grid-row-gap: 4%;
-    grid-template-areas: "mapa formulario" "mapa formulario"; }
-  .portal {
-    margin: auto;
-    width: 100%;
-    font-size: larger; }
-  .portal__runner {
-    display: flex;
-    width: 100%;
-    margin: auto; }
-  .portal__ropes {
-    display: flex;
-    width: 100%;
-    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */
