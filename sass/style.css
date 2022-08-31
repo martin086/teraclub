@@ -402,6 +402,11 @@ h2 {
     text-decoration: none;
     font-size: calc(0.5em + 1vw);
     margin: auto; }
+  .footer__items .socio {
+    border: 1px solid orange;
+    padding: 1% 1%;
+    margin: 0 10%;
+    color: orange; }
   @media (min-width: 481px) {
     .footer__items {
       flex-flow: row nowrap; }

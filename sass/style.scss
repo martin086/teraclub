@@ -478,6 +478,12 @@ h2 {
 		font-size: calc(0.5em + 1vw);
 		margin: auto;
 	}
+	.socio {
+		border: 1px solid $border-color_1;
+		padding: 1% 1%;
+		margin: 0 10%;
+		color: $color_2;
+	}
 	@include pantalla(tablet) {
 		flex-flow: row nowrap;
 		div {
