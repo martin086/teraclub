@@ -609,7 +609,7 @@ h2 {
 		font-size: medium;
 		font-family: $font-family_1;
 		font-weight: inherit;
-		text-transform: uppercase;
+		text-transform: inherit;
 		background-color: $background-color_4;
 	}
 }
@@ -619,6 +619,7 @@ h2 {
 		margin: auto;
 	}
 }
-.thank_you {
+.thank_you,
+.error {
 	padding-left: 2%;
 }

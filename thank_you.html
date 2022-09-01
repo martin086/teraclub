@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="fitness, gimnasio, salud, ejercicio, nutrición, crossfit, musculación">
-    <meta name="description" content="La experiencia definitiva en fitness, salud y ejercicio. Clases personalizadas y equipamiento premium para cada socio.">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="fitness, gimnasio, salud, ejercicio, nutrición, crossfit, musculación"/>
+    <meta name="description" content="La experiencia definitiva en fitness, salud y ejercicio. Clases personalizadas y equipamiento premium para cada socio."/>
     <title>Gracias | TeraClub Fitness</title>
     <!--Link a Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +19,63 @@
     <link rel="stylesheet" href="sass/style.css"/>
 </head>
 <body>
-    <div class="thank_you">
-        <h1>¡Gracias por contactarnos!</h1>
-        <p>Vamos a responderte a la brevedad.</p>
-        <p>Puedes cerrar esta pestaña.</p>
-    </div>
+    <header class="header sticky-top">
+        <nav class="navbar sticky-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand barra_logo" href="index.html">
+                    <img src="assets/logo.png" alt="LogoTC" title="Logo TeraClub" width="50" height="50" class="d-inline-block align-text-center"/>
+                    TeraClub
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Clases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__indoor">Indoor</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__funcional">Funcional</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__abd">ABD</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__fight_do">Fight-Do</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__axe">Axé</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__hiit">HIIT</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__gap">GAP</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__power_bars">Power Bars</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__zumba">Zumba</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__musculacion">Musculación</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__power_local">Power Local</a></li>
+                                <li><a class="dropdown-item anchor-link clases_menu" href="index.html#clases__x55">X55</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="index.html#horarios">Horarios</a>
+                        </li>
+                        <li class="nav-item anchor-link">
+                            <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ingresar.html">Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="thank_you">
+            <h1>¡Gracias por contactarnos!</h1>
+            <p>Vamos a responderte a la brevedad.</p>
+            <p>Puedes cerrar esta pestaña.</p>
+        </div>
+    </main>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="scripts/navbar-collapse.js"></script>
 </body>
 </html>

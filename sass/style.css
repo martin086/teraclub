@@ -519,14 +519,15 @@ h2 {
   font-size: medium;
   font-family: "Poppins", sans-serif;
   font-weight: inherit;
-  text-transform: uppercase;
+  text-transform: inherit;
   background-color: orange; }
 
 .portal__img img {
   width: 100%;
   margin: auto; }
 
-.thank_you {
+.thank_you,
+.error {
   padding-left: 2%; }
 
 /*# sourceMappingURL=style.css.map */
