@@ -299,7 +299,7 @@ h2 {
   .form input {
     display: inline-block;
     width: 100%; }
-  .form span {
+  .form p {
     font-weight: 800;
     font-size: x-large; }
 
@@ -318,21 +318,34 @@ h2 {
   height: 100%;
   border: 0; }
 
-.redes {
+.motivacion {
   background-color: #323234;
   margin: auto;
   position: relative; }
+  .motivacion h2 {
+    z-index: 1;
+    position: inherit;
+    margin-bottom: 1%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }
 
-.cont_redes div img {
-  display: flex;
-  width: 100%; }
+.cont_motivacion {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; }
+  .cont_motivacion div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    border: 0; }
 
 .frases {
   text-transform: uppercase;
   position: absolute;
   top: 0;
   left: 0;
-  font-size: calc(0.65rem + 1vw);
+  font-size: calc(0.5rem + 1vw);
   font-weight: 200;
   backdrop-filter: blur(14px) brightness(80%);
   display: flex;
@@ -340,13 +353,21 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }
-  .frases span {
-    padding: 0 1%; }
+  height: 75%;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  z-index: 1; }
+  .frases p {
+    padding: 0 1%;
+    margin-bottom: 0rem; }
   .frases .calidad {
     color: black;
     font-weight: bold; }
+  @media (min-width: 481px) {
+    .frases {
+      font-size: calc(0.65rem + 1vw); } }
+  @media (min-width: 768px) {
+    .frases {
+      font-size: calc(0.75rem + 1vw); } }
 
 .footer {
   background-color: #323234;
@@ -357,7 +378,7 @@ h2 {
   align-items: center;
   position: relative;
   bottom: 0;
-  margin-top: 3%;
+  margin-top: -8%;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }
   .footer h3 {
     font-size: calc(0.75em + 1vw); }
@@ -384,7 +405,8 @@ h2 {
     border-top: 1px solid whitesmoke;
     flex: auto;
     margin: 5px auto;
-    text-align: center; }
+    text-align: center;
+    padding-top: 2%; }
     .footer__items div ul li img {
       width: 55%; }
   .footer__items ul {
